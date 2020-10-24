@@ -18,9 +18,16 @@ export class PostController {
         return this.postService.createPost(post);
     }
 
-    // @Post()
-    // createPost(@Body() post: NewspaperPost){
-    //     return this.postService.createPost(post);
+    @Post('update-list')
+    updatePosts(@Body() posts: NewspaperPost[]){
+        if(posts && posts.length > 0){
+            return this.postService.updatePosts(posts);
+        }
+    }
+
+    // @Get("cleanup")
+    // cleanup(){
+    //     return this.postService.cleanupPosts();
     // }
 
 }

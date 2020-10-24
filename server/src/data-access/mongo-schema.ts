@@ -1,6 +1,13 @@
 import * as mongoose from 'mongoose';
 import { SchemaFactory, Schema, Prop } from '@nestjs/mongoose';
 
+export enum StoryCategory{
+    None,
+    Banner,
+    Highlight,
+    NewsBit,
+    Feed
+}
 @Schema()
 export class Blog extends mongoose.Document{
     @Prop() title: string;
@@ -23,6 +30,14 @@ export class NewspaperPost extends mongoose.Document{
     @Prop() imageId: string;
     @Prop() linkToPost: string;
     @Prop() user: User;
+    @Prop() storyCategory?: StoryCategory;
+    @Prop() edition: {
+        _id: string;
+        title: string;
+        description: string;
+        dateCreated: string;
+        isPublished: string;
+    };
 }
 
 @Schema()
