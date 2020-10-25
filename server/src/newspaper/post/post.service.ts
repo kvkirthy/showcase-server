@@ -12,7 +12,14 @@ export class PostService {
     async getActivePosts(){
         return await this.posts.find({
             title: { $exists: true, $ne: null }
-        }).exec();
+        });
+    }
+
+    async getPostsByEdition(editionId: string){
+        console.log("edition id", editionId);
+        return await this.posts.find({
+            'edition._id': editionId
+        });
     }
 
     async createPost(doc: NewspaperPost){

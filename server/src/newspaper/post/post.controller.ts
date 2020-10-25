@@ -1,4 +1,4 @@
-import { Controller, Post, Body, Get } from '@nestjs/common';
+import { Controller, Post, Body, Get, Query } from '@nestjs/common';
 import { NewspaperPost } from 'src/data-access/mongo-schema';
 import { PostService } from 'src/newspaper/post/post.service';
 
@@ -11,6 +11,11 @@ export class PostController {
     @Get()
     getActivePosts(){
         return this.postService.getActivePosts();
+    }
+
+    @Get('by-edition')
+    getPostsByEdition(@Query("editionId") editionId: string){
+        return this.postService.getPostsByEdition(editionId);
     }
 
     @Post()
