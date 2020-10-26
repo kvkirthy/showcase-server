@@ -27,7 +27,7 @@ export class PostService {
         return post.save();
     }
 
-    async updatePosts(posts: NewspaperPost[]){
+    async addPostsToEdition(posts: NewspaperPost[]){
         await this.posts.updateMany({
             'edition._id': {$eq: posts[0].edition._id}
         }, {edition: null});
@@ -42,7 +42,22 @@ export class PostService {
                     console.log("product", product);
                 });
         });
+    }
 
+    async updatePost(post: NewspaperPost){
+        await this.posts.updateOne({_id: post._id}, {
+                title: post.title,
+                edition: post.edition, 
+                storyCategory: post.storyCategory,
+                description: post.description,
+                imageId: post.imageId,
+                linkToPost: post.linkToPost,
+                user: post.user,
+            },
+            (err, product: NewspaperPost) => {
+                console.log("error", err);
+                console.log("product", product);
+            });
     }
 
     // async cleanupPosts(){

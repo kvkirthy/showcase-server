@@ -23,11 +23,16 @@ export class PostController {
         return this.postService.createPost(post);
     }
 
-    @Post('update-list')
-    updatePosts(@Body() posts: NewspaperPost[]){
+    @Post('add-posts-to-edition')
+    addPostsToEdition(@Body() posts: NewspaperPost[]){
         if(posts && posts.length > 0){
-            return this.postService.updatePosts(posts);
+            return this.postService.addPostsToEdition(posts);
         }
+    }
+
+    @Post('update-post')
+    updatePost(@Body() post: NewspaperPost){
+        return this.postService.updatePost(post);
     }
 
     // @Get("cleanup")
