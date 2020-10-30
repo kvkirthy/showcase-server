@@ -50,6 +50,7 @@ export class PostService {
                 edition: post.edition, 
                 storyCategory: post.storyCategory,
                 description: post.description,
+                story: post.story,
                 imageId: post.imageId,
                 linkToPost: post.linkToPost,
                 user: post.user,

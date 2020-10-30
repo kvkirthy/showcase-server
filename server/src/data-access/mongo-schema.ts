@@ -27,6 +27,7 @@ class User {
 export class NewspaperPost extends mongoose.Document{
     @Prop() title: string;
     @Prop() description: string;
+    @Prop() story: string;
     @Prop() imageId: string;
     @Prop() linkToPost: string;
     @Prop() user: User;
