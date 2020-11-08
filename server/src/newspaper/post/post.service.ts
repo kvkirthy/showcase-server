@@ -34,6 +34,7 @@ export class PostService {
         
         posts.forEach( async post => {
             await this.posts.updateOne({_id: post._id}, {
+                    imageId: post.imageId,
                     edition: post.edition, 
                     storyCategory: post.storyCategory
                 },
