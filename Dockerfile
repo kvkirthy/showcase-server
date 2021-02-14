@@ -1,7 +1,7 @@
 FROM node:12.18.2-stretch
 RUN npm i -g @nestjs/cli
-COPY /server/client /app/client
 COPY /server/dist/ /app/dist
+COPY /server/client/ /app/client
 COPY /server/package.json /app/package.json
 COPY /server/node_modules /app/node_modules
 COPY /server/nest-cli.json /app/nest-cli.json
