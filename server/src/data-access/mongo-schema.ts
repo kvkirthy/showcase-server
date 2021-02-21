@@ -17,6 +17,16 @@ export class Blog extends mongoose.Document{
     @Prop() isHighlighted: boolean;
 }
 
+@Schema({
+    collection: 'covid-data'
+})
+export class VaccinationRecord extends mongoose.Document{
+    @Prop() location: string;
+    @Prop() doesesGiven: number;
+    @Prop() dosesPerHundred: number;
+    @Prop() dateModified: Date;
+}
+
 class User {
     @Prop() fullname: string;
     @Prop() twitterHandle: string;
@@ -52,3 +62,4 @@ export class NewspaperEdition extends mongoose.Document{
 export const BlogSchema =  SchemaFactory.createForClass(Blog);
 export const NewspaperPostSchema = SchemaFactory.createForClass(NewspaperPost);
 export const NewspaperEditionSchema = SchemaFactory.createForClass(NewspaperEdition);
+export const VaccinationRecordSchema = SchemaFactory.createForClass(VaccinationRecord);

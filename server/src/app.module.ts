@@ -1,19 +1,24 @@
 import { join } from 'path';
 import { Module } from '@nestjs/common';
-import { MongooseModule } from '@nestjs/mongoose';
-import { ServeStaticModule } from '@nestjs/serve-static';
-
 import { AppService } from './app.service';
 import { AppController } from './app.controller';
-import { BlogSchema, NewspaperEditionSchema, NewspaperPostSchema } from './data-access/mongo-schema';
-import { BlogPostsService } from './blog-posts/blog-posts.service';
-import { BlogPostsController } from './blog-posts/blog-posts.controller';
-import { StorageController } from './storage/storage.controller';
+import { MongooseModule } from '@nestjs/mongoose';
+import { CovidService } from './covid/covid.service';
+import { ServeStaticModule } from '@nestjs/serve-static';
+import { CovidController } from './covid/covid.controller';
 import { StorageService } from './storage/storage.service';
-import { PostController } from './newspaper/post/post.controller';
 import { PostService } from './newspaper/post/post.service';
-import { EditionController } from './newspaper/edition/edition.controller';
+import { StorageController } from './storage/storage.controller';
+import { PostController } from './newspaper/post/post.controller';
+import { BlogPostsService } from './blog-posts/blog-posts.service';
 import { EditionService } from './newspaper/edition/edition.service';
+import { BlogPostsController } from './blog-posts/blog-posts.controller';
+import { EditionController } from './newspaper/edition/edition.controller';
+
+import { BlogSchema, 
+  NewspaperEditionSchema, 
+  NewspaperPostSchema, 
+  VaccinationRecordSchema } from './data-access/mongo-schema';
 
 @Module({
   imports: [
@@ -26,14 +31,26 @@ import { EditionService } from './newspaper/edition/edition.service';
     MongooseModule.forFeature([
       { name: 'Blogs', schema: BlogSchema },
       { name: 'Newspaper_Post', schema: NewspaperPostSchema },
-      { name: 'Newspaper_Edition', schema: NewspaperEditionSchema },
-
+      { name: 'Vaccination_Record', schema: VaccinationRecordSchema},
+      { name: 'Newspaper_Edition', schema: NewspaperEditionSchema }
     ]),
     ServeStaticModule.forRoot({
       rootPath: join(__dirname, '..', 'client'),
     }),
   ],
-  controllers: [AppController, BlogPostsController, StorageController, PostController, EditionController],
-  providers: [AppService, BlogPostsService, StorageService, PostService, EditionService],
+  controllers: [AppController, 
+        BlogPostsController, 
+        StorageController, 
+        PostController, 
+        EditionController, 
+        CovidController
+  ],
+  providers: [AppService, 
+        BlogPostsService, 
+        StorageService,
+        PostService, 
+        EditionService, 
+        CovidService
+      ],
 })
 export class AppModule { }
