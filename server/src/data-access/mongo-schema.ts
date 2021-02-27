@@ -15,6 +15,8 @@ export class Blog extends mongoose.Document{
     @Prop() imageUrl: string;
     @Prop() linkToBlog: string;
     @Prop() isHighlighted: boolean;
+    @Prop() dateAdded: Date;
+    @Prop() bannerImage: string;
 }
 
 @Schema({

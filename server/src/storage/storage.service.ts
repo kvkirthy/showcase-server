@@ -29,9 +29,17 @@ export class StorageService {
         let images = []
         this.containerClient = this.blobServiceClient.getContainerClient('banners');
         for await (const blob of this.containerClient.listBlobsFlat()) {
-            const blobClient = await this.containerClient.getBlobClient(blob.name);
-            await blobClient.downloadToFile(`./client/public/${blob.name}`);
-            images.push(`./public/${blob.name}`); // todo: add to configuration
+            images.push(this.containerClient.getBlobClient(blob.name).url);
+        }
+        return images;
+    }
+
+    async getAvatars(): Promise<Array<string>>{
+        let images: Array<string> = []
+        this.containerClient = this.blobServiceClient.getContainerClient('avatars');
+        this.containerClient.url
+        for await (const blob of this.containerClient.listBlobsFlat()) {
+            images.push(this.containerClient.getBlobClient(blob.name).url);
         }
         return images;
     }

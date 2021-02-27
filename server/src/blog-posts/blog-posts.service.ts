@@ -14,4 +14,8 @@ export class BlogPostsService {
        return blogs;
     }
 
+    async createBlog(blog: Blog){
+        return await this.blogs.create(blog)
+    }
+
 }

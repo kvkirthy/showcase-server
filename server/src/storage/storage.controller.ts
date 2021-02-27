@@ -11,4 +11,9 @@ export class StorageController {
     public getBanners(){
         return this.storageService.getBanners();
     }
+
+    @Get('avatars')
+    public getAvatars(){
+        return this.storageService.getAvatars();
+    }
 }
