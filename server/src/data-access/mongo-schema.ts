@@ -11,12 +11,13 @@ export enum StoryCategory{
 @Schema()
 export class Blog extends mongoose.Document{
     @Prop() title: string;
-    @Prop() description: string;
+    @Prop() tags: string[];
+    @Prop() dateAdded: Date;
     @Prop() imageUrl: string;
     @Prop() linkToBlog: string;
-    @Prop() isHighlighted: boolean;
-    @Prop() dateAdded: Date;
     @Prop() bannerImage: string;
+    @Prop() description: string;
+    @Prop() isHighlighted: boolean;
 }
 
 @Schema({
