@@ -1,0 +1,124 @@
+{
+  "configVersion": 1,
+  "timestamp": 1640163997372,
+  "index": "/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/favicon.ico",
+        "/index.html",
+        "/main-es2015.2f69cd7acfdbcf0f2b5b.js",
+        "/main-es5.2f69cd7acfdbcf0f2b5b.js",
+        "/manifest.webmanifest",
+        "/polyfills-es2015.09ee2f719bd21ab5c7b1.js",
+        "/polyfills-es5.12b5c32d1603e35dd556.js",
+        "/runtime-es2015.0dae8cbc97194c7caed4.js",
+        "/runtime-es5.0dae8cbc97194c7caed4.js",
+        "/styles.7c294388090472188879.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/assets/Linkedin.png",
+        "/assets/book-1.jpg",
+        "/assets/book-2.jpg",
+        "/assets/codevenkey.png",
+        "/assets/covid-asset.png",
+        "/assets/github.png",
+        "/assets/icons/icon-128x128.png",
+        "/assets/icons/icon-144x144.png",
+        "/assets/icons/icon-152x152.png",
+        "/assets/icons/icon-192x192.png",
+        "/assets/icons/icon-384x384.png",
+        "/assets/icons/icon-512x512.png",
+        "/assets/icons/icon-72x72.png",
+        "/assets/icons/icon-96x96.png",
+        "/assets/js.jpeg",
+        "/assets/jstimes2.png",
+        "/assets/ny.jpg",
+        "/assets/profile-pic.JPG",
+        "/assets/stackoverflow.png",
+        "/assets/twitter.png"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [
+    {
+      "name": "blogs",
+      "patterns": [
+        "\\/blog-posts"
+      ],
+      "strategy": "freshness",
+      "maxSize": 180000,
+      "maxAge": 2592000000,
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "version": 1
+    }
+  ],
+  "hashTable": {
+    "/assets/Linkedin.png": "29ce61f3a4041de7eb19152a3dd710f841b8454b",
+    "/assets/book-1.jpg": "412e1bf63960bc739410e22519ee8d0e87126610",
+    "/assets/book-2.jpg": "467e9990428abef9f9a62a3fd3e1f9eea1931866",
+    "/assets/codevenkey.png": "edfe9a408299afe7b4c4e91cdbf26d34b27e3029",
+    "/assets/covid-asset.png": "f45b36bd578939870acab748c97400043cd6414a",
+    "/assets/github.png": "3600ce3961cc4803a87b8f88b87c94686bbacb0e",
+    "/assets/icons/icon-128x128.png": "c4f7ed22c6a536966fbc50533ec0547ae540f508",
+    "/assets/icons/icon-144x144.png": "09e1445a2397f3dae72630599744bbe5be120055",
+    "/assets/icons/icon-152x152.png": "141a831a0753771d22d913d48b90896ae7dcf447",
+    "/assets/icons/icon-192x192.png": "0614a104ac5e588e0442f1b9161583505020dd3d",
+    "/assets/icons/icon-384x384.png": "01c4e40b369e9cd3410273ab699e2f2e8595942b",
+    "/assets/icons/icon-512x512.png": "edfe9a408299afe7b4c4e91cdbf26d34b27e3029",
+    "/assets/icons/icon-72x72.png": "2942bf809dffeacf967418f0cc004a2987772dd0",
+    "/assets/icons/icon-96x96.png": "66dcd5136cb022a3f60c6b439acd4125c390a9f6",
+    "/assets/js.jpeg": "b53b4e60ce65d03e09dd6d7bffa5e905c28264b9",
+    "/assets/jstimes2.png": "521e97bf0dec7821bae2c5cdbf82c47d56b3519c",
+    "/assets/ny.jpg": "0409942fdb46d95f7b64f18e152d0a438360e2ab",
+    "/assets/profile-pic.JPG": "acaf1a05c901ffeeed2ed4fe976881fc3f2572ee",
+    "/assets/stackoverflow.png": "c4f7f5eafb958cf1f7444bb64c8b62d6102d0271",
+    "/assets/twitter.png": "f2ae66d7fd9329500062e6e7e1cf2553ef9d9c81",
+    "/favicon.ico": "548a70b74675dc21c6f88db1828c538eb30b1f2a",
+    "/index.html": "c02538338373dece7fc042f1f7e3d854b92eb7ca",
+    "/main-es2015.2f69cd7acfdbcf0f2b5b.js": "89ab4bbe5a8e6058a395835650fe4186506ea3d1",
+    "/main-es5.2f69cd7acfdbcf0f2b5b.js": "166aaaef0b03bcdaee6ee9bcc66ff911654f7455",
+    "/manifest.webmanifest": "c4e9616721b1c2970ebc60b87490d35040973408",
+    "/polyfills-es2015.09ee2f719bd21ab5c7b1.js": "72ad4ccc0a3916ae4598199447cdeadd6d380570",
+    "/polyfills-es5.12b5c32d1603e35dd556.js": "8aa26ea87b9958c6bd13b7c257c0e9940438e684",
+    "/runtime-es2015.0dae8cbc97194c7caed4.js": "a9aafcf49f49145093fc831efd9b8e2f6c71bb9c",
+    "/runtime-es5.0dae8cbc97194c7caed4.js": "a9aafcf49f49145093fc831efd9b8e2f6c71bb9c",
+    "/styles.7c294388090472188879.css": "1845df2d9860c11cbb89e70a7dec778825c376dd"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ]
+}
