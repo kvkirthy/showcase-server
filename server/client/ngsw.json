@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1640163997372,
+  "timestamp": 1645009194266,
   "index": "/index.html",
   "assetGroups": [
     {
@@ -13,8 +13,8 @@
       "urls": [
         "/favicon.ico",
         "/index.html",
-        "/main-es2015.2f69cd7acfdbcf0f2b5b.js",
-        "/main-es5.2f69cd7acfdbcf0f2b5b.js",
+        "/main-es2015.37c88cb0f17b21924860.js",
+        "/main-es5.37c88cb0f17b21924860.js",
         "/manifest.webmanifest",
         "/polyfills-es2015.09ee2f719bd21ab5c7b1.js",
         "/polyfills-es5.12b5c32d1603e35dd556.js",
@@ -60,7 +60,8 @@
     {
       "name": "blogs",
       "patterns": [
-        "\\/blog-posts"
+        "\\/blog-posts",
+        "https:\\/\\/storage4showcase\\.blob\\.core\\.windows\\.net"
       ],
       "strategy": "freshness",
       "maxSize": 180000,
@@ -93,10 +94,10 @@
     "/assets/stackoverflow.png": "c4f7f5eafb958cf1f7444bb64c8b62d6102d0271",
     "/assets/twitter.png": "f2ae66d7fd9329500062e6e7e1cf2553ef9d9c81",
     "/favicon.ico": "548a70b74675dc21c6f88db1828c538eb30b1f2a",
-    "/index.html": "c02538338373dece7fc042f1f7e3d854b92eb7ca",
-    "/main-es2015.2f69cd7acfdbcf0f2b5b.js": "89ab4bbe5a8e6058a395835650fe4186506ea3d1",
-    "/main-es5.2f69cd7acfdbcf0f2b5b.js": "166aaaef0b03bcdaee6ee9bcc66ff911654f7455",
-    "/manifest.webmanifest": "c4e9616721b1c2970ebc60b87490d35040973408",
+    "/index.html": "5a8d42244c2e81a4eedbe70d11c904bf314bfd3d",
+    "/main-es2015.37c88cb0f17b21924860.js": "e12b2fb1660953a82da510742400cec7e5b009b5",
+    "/main-es5.37c88cb0f17b21924860.js": "d04cac6ebc1788417cf34ae9acd5c49b67172c47",
+    "/manifest.webmanifest": "f4fb47207f9480b06a67307dc241af59177f1b17",
     "/polyfills-es2015.09ee2f719bd21ab5c7b1.js": "72ad4ccc0a3916ae4598199447cdeadd6d380570",
     "/polyfills-es5.12b5c32d1603e35dd556.js": "8aa26ea87b9958c6bd13b7c257c0e9940438e684",
     "/runtime-es2015.0dae8cbc97194c7caed4.js": "a9aafcf49f49145093fc831efd9b8e2f6c71bb9c",
